@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KindSwap - Share Kindly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #065f46;
+        --secondary: #fffaf5;
+        --accent: #f59e0b;
+        --heart: #f43f5e;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #fffaf5;
+        color: #1c1917;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-urdu {
+        font-family: 'Noto Nastaliq Urdu', serif;
+        line-height: 1.8;
+      }
+      .pakistani-pattern {
+        background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+        opacity: 0.04;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .premium-shadow {
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+      }
+      .safe-bottom {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Smooth transitions for navigation */
+      .page-enter {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      .page-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 300ms, transform 300ms;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="pakistani-pattern fixed inset-0 pointer-events-none z-[-1]"></div>
+    <div id="root"></div>
+  </body>
+</html>

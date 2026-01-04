@@ -1,0 +1,8 @@
+{
+  "name": "KindSwap",
+  "description": "A premium Pakistani community marketplace focused on sharing, fair trading, and trust. Experience a kinder way to exchange items in Lahore.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
